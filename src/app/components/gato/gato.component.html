@@ -1,0 +1,13 @@
+<app-navbar></app-navbar>
+<div class="row " style="height: 70%; text-align: center; margin-top: 55px;">
+    <div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2" >
+        <div class="juego">
+            <div class="tablero">
+                    <div *ngFor="let casilla of tabler; index as i" class="casilla" (click)="jugar(casilla.Nombre)">
+                    </div>
+            </div>
+          
+            </div>
+    </div>
+</div>
+

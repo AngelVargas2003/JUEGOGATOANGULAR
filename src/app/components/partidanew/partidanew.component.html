@@ -1,0 +1,10 @@
+<div>
+
+  <mat-grid-list cols="5">
+    <mat-grid-tile *ngFor="let i of Grid" style="background-color: aqua;">
+      <img *ngIf="i.barco" src="../../../assets/battleship-Transparent-Images.png" height="300vh" width="300vw">
+      <div *ngIf="!(i.barco)">{{i.casilla}}</div>
+    </mat-grid-tile>
+  </mat-grid-list>
+</div>
+
